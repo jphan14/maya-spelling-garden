@@ -78,10 +78,16 @@ LOCAL_MIRROR = os.path.join(
 
 RATE = "-10%"  # slightly slowed down for a young reader
 
+# Jenny-only: with 240 words, embedding 3 voices per word pushed the page to
+# 11.8MB. Dropping to one voice keeps it around 4MB. The alt-voice buttons
+# disappear automatically (the UI just renders however many voices are here)
+# -- to bring them back for a smaller word list, uncomment below and rerun
+# (their audio is already cached in audio/, this repo's history, from when
+# they were generated, so no new TTS calls needed).
 VOICES = [
     {"key": "jenny", "id": "en-US-JennyNeural", "label": "Jenny", "icon": "\U0001F469"},
-    {"key": "andrew", "id": "en-US-AndrewNeural", "label": "Andrew", "icon": "\U0001F9D1"},
-    {"key": "emma", "id": "en-US-EmmaNeural", "label": "Emma", "icon": "\U0001F467"},
+    # {"key": "andrew", "id": "en-US-AndrewNeural", "label": "Andrew", "icon": "\U0001F9D1"},
+    # {"key": "emma", "id": "en-US-EmmaNeural", "label": "Emma", "icon": "\U0001F467"},
 ]
 PRIMARY_VOICE = VOICES[0]  # auto-plays on word load; all voices get an equal tap-to-hear button
 
@@ -103,6 +109,9 @@ async def synth_one(word, voice_id, path):
     await communicate.save(path)
 
 
+CONCURRENCY = 12  # simultaneous edge-tts requests; keeps large word lists fast without hammering the service
+
+
 async def generate_missing(all_words):
     os.makedirs(AUDIO_DIR, exist_ok=True)
     jobs = []
@@ -116,10 +125,17 @@ async def generate_missing(all_words):
         print("All %d word(s) x %d voice(s) already cached in %s" % (len(all_words), len(VOICES), AUDIO_DIR))
         return
 
-    print("Generating %d audio clip(s)..." % len(jobs))
-    for word, voice, path in jobs:
-        await synth_one(word, voice["id"], path)
-        print("  wrote " + os.path.basename(path) + " (" + voice["label"] + ")")
+    print("Generating %d audio clip(s) (up to %d at a time)..." % (len(jobs), CONCURRENCY))
+    sem = asyncio.Semaphore(CONCURRENCY)
+    done_count = [0]
+
+    async def run_one(word, voice, path):
+        async with sem:
+            await synth_one(word, voice["id"], path)
+            done_count[0] += 1
+            print("  [%d/%d] wrote %s (%s)" % (done_count[0], len(jobs), os.path.basename(path), voice["label"]))
+
+    await asyncio.gather(*[run_one(w, v, p) for w, v, p in jobs])
 
 
 def b64_audio(word, voice_key):
@@ -134,8 +150,7 @@ def js_string(s):
 
 
 def build_word_entry(w):
-    primary_audio = b64_audio(w["word"], PRIMARY_VOICE["key"])
-    entry = "{ word: %s, audio: %s" % (js_string(w["word"]), js_string(primary_audio))
+    entry = "{ word: %s" % js_string(w["word"])
     if w.get("emoji"):
         entry += ", emoji: %s" % js_string(w["emoji"])
 
@@ -152,8 +167,9 @@ def build_word_entry(w):
 def build_weeks_js(weeks_data):
     lines = [START_MARKER, "var WEEKS = ["]
     for week in weeks_data["weeks"]:
-        lines.append("  { id: %s, label: %s, focus: %s, words: [" % (
-            js_string(week["id"]), js_string(week["label"]), js_string(week["focus"])))
+        unit_part = (", unit: %d" % week["unit"]) if week.get("unit") is not None else ""
+        lines.append("  { id: %s, label: %s%s, focus: %s, words: [" % (
+            js_string(week["id"]), js_string(week["label"]), unit_part, js_string(week["focus"])))
         word_entries = [build_word_entry(w) for w in week["words"]]
         lines.append("    " + ",\n    ".join(word_entries))
         lines.append("  ] },")

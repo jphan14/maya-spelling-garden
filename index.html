@@ -235,13 +235,13 @@ body::after {
   <div class="section-label">Choose a lesson</div>
   <div class="week-list" id="week-list"></div>
 
-  <button class="start-btn" onclick="startSession()">🌼 Start, Maya!</button>
+  <button class="start-btn" id="start-btn">🌼 Start, Maya!</button>
 </div>
 
 <!-- GAME -->
 <div class="screen hidden" id="game-screen">
   <div class="top-bar">
-    <button class="back-btn" onclick="goHome()">←</button>
+    <button class="back-btn" id="back-btn">←</button>
     <div class="top-center">
       <div class="week-lbl" id="week-lbl">Aug 31</div>
       <div class="mode-badge" id="mode-badge">Listen &amp; Spell</div>
@@ -259,7 +259,7 @@ body::after {
       <div class="letter-boxes hidden" id="letter-boxes"></div>
     </div>
   </div>
-  <button class="check-btn" id="check-btn" onclick="onCheck()" disabled>✅ Check!</button>
+  <button class="check-btn" id="check-btn" disabled>✅ Check!</button>
 </div>
 
 <!-- RESULTS -->
@@ -269,8 +269,8 @@ body::after {
   <div class="results-title" id="results-title">Great growing!</div>
   <div class="results-sub" id="results-sub">10 out of 12 words!</div>
   <div class="results-btns">
-    <button class="results-btn secondary" onclick="goHome()">🏡 Home</button>
-    <button class="results-btn" onclick="startSession()">🔁 Play Again</button>
+    <button class="results-btn secondary" id="results-home-btn">🏡 Home</button>
+    <button class="results-btn" id="results-again-btn">🔁 Play Again</button>
   </div>
   <div class="results-love">Made with love, just for Maya 💚</div>
 </div>
@@ -1134,9 +1134,21 @@ function launchConfetti(count) {
 }
 
 /* ---------- init ---------- */
+function bindStaticButtons() {
+  // Bound here (instead of inline onclick="" attributes) so the app still
+  // works under strict Content-Security-Policy settings or browser
+  // extensions that strip inline event handler attributes.
+  document.getElementById('start-btn').onclick = startSession;
+  document.getElementById('back-btn').onclick = goHome;
+  document.getElementById('check-btn').onclick = onCheck;
+  document.getElementById('results-home-btn').onclick = goHome;
+  document.getElementById('results-again-btn').onclick = startSession;
+}
+
 function init() {
   selectedWeekId = computeCurrentLessonId() || (WEEKS.length ? WEEKS[0].id : 'all');
   document.getElementById('home-photo').src = MAYA_PHOTO;
+  bindStaticButtons();
   buildWeekList();
   buildModeToggle();
   updateHomeStats();

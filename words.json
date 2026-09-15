@@ -1,0 +1,30 @@
+{
+  "weeks": [
+    {
+      "id": "aug31",
+      "label": "Aug 31",
+      "focus": "Short Vowel a",
+      "words": [
+        { "word": "am" },
+        { "word": "at" },
+        { "word": "sat" },
+        { "word": "man", "emoji": "👨" },
+        { "word": "dad", "emoji": "👨‍👧" },
+        { "word": "mat" }
+      ]
+    },
+    {
+      "id": "sept8",
+      "label": "Sept 8",
+      "focus": "Short Vowel i",
+      "words": [
+        { "word": "if" },
+        { "word": "rip" },
+        { "word": "is" },
+        { "word": "fit" },
+        { "word": "him" },
+        { "word": "pin", "emoji": "📌" }
+      ]
+    }
+  ]
+}

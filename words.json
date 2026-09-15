@@ -1,111 +1,997 @@
 {
   "weeks": [
-    { "id": "lesson1", "label": "Lesson 1", "unit": 1, "focus": "Short Vowel a", "words": [
-      { "word": "am" }, { "word": "at" }, { "word": "sat" },
-      { "word": "man", "emoji": "👨" }, { "word": "dad", "emoji": "👨‍👧" }, { "word": "mat" }
-    ]},
-    { "id": "lesson2", "label": "Lesson 2", "unit": 1, "focus": "Short Vowel i", "words": [
-      { "word": "if" }, { "word": "is" }, { "word": "him" },
-      { "word": "rip" }, { "word": "fit" }, { "word": "pin", "emoji": "📌" }
-    ]},
-    { "id": "lesson3", "label": "Lesson 3", "unit": 1, "focus": "Short Vowel o", "words": [
-      { "word": "log" }, { "word": "dot" }, { "word": "top" }, { "word": "hot" }, { "word": "lot" }, { "word": "ox" }
-    ]},
-    { "id": "lesson4", "label": "Lesson 4", "unit": 1, "focus": "Short Vowel e", "words": [
-      { "word": "yet" }, { "word": "web" }, { "word": "pen" }, { "word": "wet" }, { "word": "leg" }, { "word": "hen" }
-    ]},
-    { "id": "lesson5", "label": "Lesson 5", "unit": 1, "focus": "Short Vowel u", "words": [
-      { "word": "up" }, { "word": "bug" }, { "word": "mud" }, { "word": "nut" }, { "word": "hug" }, { "word": "tub" }
-    ]},
-    { "id": "lesson6", "label": "Lesson 6", "unit": 2, "focus": "Short a Words", "words": [
-      { "word": "an" }, { "word": "bad" }, { "word": "can" }, { "word": "had" }, { "word": "cat" }, { "word": "ran" }
-    ]},
-    { "id": "lesson7", "label": "Lesson 7", "unit": 2, "focus": "Short i Words", "words": [
-      { "word": "in" }, { "word": "will" }, { "word": "did" }, { "word": "sit" }, { "word": "six" }, { "word": "big" }
-    ]},
-    { "id": "lesson8", "label": "Lesson 8", "unit": 2, "focus": "Short o Words", "words": [
-      { "word": "on" }, { "word": "got" }, { "word": "fox" }, { "word": "pop" }, { "word": "not" }, { "word": "hop" }
-    ]},
-    { "id": "lesson9", "label": "Lesson 9", "unit": 2, "focus": "Short e Words", "words": [
-      { "word": "yes" }, { "word": "let" }, { "word": "red" }, { "word": "ten" }, { "word": "bed" }, { "word": "get" }
-    ]},
-    { "id": "lesson10", "label": "Lesson 10", "unit": 2, "focus": "Short u Words", "words": [
-      { "word": "us" }, { "word": "sun" }, { "word": "but" }, { "word": "fun" }, { "word": "bus" }, { "word": "run" }
-    ]},
-    { "id": "lesson11", "label": "Lesson 11", "unit": 3, "focus": "th- Words", "words": [
-      { "word": "that" }, { "word": "then" }, { "word": "this" }, { "word": "them" }, { "word": "with" }, { "word": "bath" }
-    ]},
-    { "id": "lesson12", "label": "Lesson 12", "unit": 3, "focus": "ch- Words", "words": [
-      { "word": "chin" }, { "word": "chop" }, { "word": "much" }, { "word": "chip" }, { "word": "rich" }, { "word": "chick" }
-    ]},
-    { "id": "lesson13", "label": "Lesson 13", "unit": 3, "focus": "sh-/wh- Words", "words": [
-      { "word": "ship" }, { "word": "shop" }, { "word": "which" }, { "word": "when" }, { "word": "whip" }, { "word": "fish" }
-    ]},
-    { "id": "lesson14", "label": "Lesson 14", "unit": 3, "focus": "Long a (Silent e)", "words": [
-      { "word": "came" }, { "word": "make" }, { "word": "brave" }, { "word": "late" }, { "word": "gave" }, { "word": "shape" }
-    ]},
-    { "id": "lesson15", "label": "Lesson 15", "unit": 3, "focus": "Long i (Silent e)", "words": [
-      { "word": "time" }, { "word": "like" }, { "word": "kite" }, { "word": "bike" }, { "word": "white" }, { "word": "drive" }
-    ]},
-    { "id": "lesson16", "label": "Lesson 16", "unit": 4, "focus": "Long o (Silent e)", "words": [
-      { "word": "so" }, { "word": "go" }, { "word": "home" }, { "word": "hole" }, { "word": "no" },
-      { "word": "rope" }, { "word": "joke" }, { "word": "bone" }, { "word": "stove" }, { "word": "poke" }
-    ]},
-    { "id": "lesson17", "label": "Lesson 17", "unit": 4, "focus": "Long e (ee/ea)", "words": [
-      { "word": "me" }, { "word": "be" }, { "word": "read" }, { "word": "feet" }, { "word": "tree" },
-      { "word": "keep" }, { "word": "eat" }, { "word": "mean" }, { "word": "sea" }, { "word": "these" }
-    ]},
-    { "id": "lesson18", "label": "Lesson 18", "unit": 4, "focus": "Long a (ai/ay)", "words": [
-      { "word": "play" }, { "word": "grain" }, { "word": "sail" }, { "word": "mail" }, { "word": "may" },
-      { "word": "rain" }, { "word": "way" }, { "word": "day" }, { "word": "stay" }, { "word": "pain" }
-    ]},
-    { "id": "lesson19", "label": "Lesson 19", "unit": 4, "focus": "Long o (ow/oa)", "words": [
-      { "word": "show" }, { "word": "row" }, { "word": "grow" }, { "word": "low" }, { "word": "blow" },
-      { "word": "snow" }, { "word": "boat" }, { "word": "coat" }, { "word": "road" }, { "word": "toad" }
-    ]},
-    { "id": "lesson20", "label": "Lesson 20", "unit": 4, "focus": "Compound Words", "words": [
-      { "word": "bedtime" }, { "word": "sunset" }, { "word": "bathtub" }, { "word": "sailboat" }, { "word": "flagpole" },
-      { "word": "backpack" }, { "word": "playpen" }, { "word": "raincoat" }, { "word": "inside" }, { "word": "himself" }
-    ]},
-    { "id": "lesson21", "label": "Lesson 21", "unit": 5, "focus": "ar Words", "words": [
-      { "word": "far" }, { "word": "arm" }, { "word": "yard" }, { "word": "art" }, { "word": "jar" },
-      { "word": "bar" }, { "word": "barn" }, { "word": "bark" }, { "word": "card" }, { "word": "yarn" }
-    ]},
-    { "id": "lesson22", "label": "Lesson 22", "unit": 5, "focus": "er/ir/ur Words", "words": [
-      { "word": "her" }, { "word": "fern" }, { "word": "girl" }, { "word": "sir" }, { "word": "stir" },
-      { "word": "bird" }, { "word": "fur" }, { "word": "hurt" }, { "word": "turn" }, { "word": "third" }
-    ]},
-    { "id": "lesson23", "label": "Lesson 23", "unit": 5, "focus": "oo (as in book)", "words": [
-      { "word": "look" }, { "word": "book" }, { "word": "good" }, { "word": "hook" }, { "word": "brook" },
-      { "word": "took" }, { "word": "foot" }, { "word": "shook" }, { "word": "wood" }, { "word": "hood" }
-    ]},
-    { "id": "lesson24", "label": "Lesson 24", "unit": 5, "focus": "oo (as in moon)", "words": [
-      { "word": "soon" }, { "word": "new" }, { "word": "noon" }, { "word": "zoo" }, { "word": "boot" },
-      { "word": "too" }, { "word": "moon" }, { "word": "blew" }, { "word": "soup" }, { "word": "you" }
-    ]},
-    { "id": "lesson25", "label": "Lesson 25", "unit": 5, "focus": "ow/ou Words", "words": [
-      { "word": "how" }, { "word": "now" }, { "word": "cow" }, { "word": "owl" }, { "word": "ouch" },
-      { "word": "house" }, { "word": "found" }, { "word": "out" }, { "word": "gown" }, { "word": "town" }
-    ]},
-    { "id": "lesson26", "label": "Lesson 26", "unit": 6, "focus": "-ed/-ing Endings", "words": [
-      { "word": "mix" }, { "word": "mixed" }, { "word": "hop" }, { "word": "hopped" }, { "word": "hope" },
-      { "word": "hoping" }, { "word": "run" }, { "word": "running" }, { "word": "use" }, { "word": "used" }
-    ]},
-    { "id": "lesson27", "label": "Lesson 27", "unit": 6, "focus": "-er/-est Endings", "words": [
-      { "word": "hand" }, { "word": "harder" }, { "word": "hardest" }, { "word": "fast" }, { "word": "faster" },
-      { "word": "fastest" }, { "word": "slow" }, { "word": "slower" }, { "word": "slowest" }, { "word": "sooner" }
-    ]},
-    { "id": "lesson28", "label": "Lesson 28", "unit": 6, "focus": "Long i (y)", "words": [
-      { "word": "my" }, { "word": "try" }, { "word": "sky" }, { "word": "fly" }, { "word": "by" },
-      { "word": "dry" }, { "word": "pie" }, { "word": "cried" }, { "word": "night" }, { "word": "light" }
-    ]},
-    { "id": "lesson29", "label": "Lesson 29", "unit": 6, "focus": "-ly/-y Endings", "words": [
-      { "word": "sad" }, { "word": "sadly" }, { "word": "slow" }, { "word": "slowly" }, { "word": "dust" },
-      { "word": "dusty" }, { "word": "trick" }, { "word": "tricky" }, { "word": "help" }, { "word": "helpful" }
-    ]},
-    { "id": "lesson30", "label": "Lesson 30", "unit": 6, "focus": "Multisyllable Words", "words": [
-      { "word": "even" }, { "word": "open" }, { "word": "begin" }, { "word": "baby" }, { "word": "tiger" },
-      { "word": "music" }, { "word": "paper" }, { "word": "zero" }, { "word": "table" }, { "word": "below" }
-    ]}
+    {
+      "id": "lesson1",
+      "label": "Lesson 1",
+      "unit": 1,
+      "focus": "Short Vowel a",
+      "words": [
+        {
+          "word": "am"
+        },
+        {
+          "word": "at"
+        },
+        {
+          "word": "sat"
+        },
+        {
+          "word": "man",
+          "emoji": "\ud83d\udc68"
+        },
+        {
+          "word": "dad",
+          "emoji": "\ud83d\udc68\u200d\ud83d\udc67"
+        },
+        {
+          "word": "mat"
+        }
+      ],
+      "weekOf": "2026-08-31"
+    },
+    {
+      "id": "lesson2",
+      "label": "Lesson 2",
+      "unit": 1,
+      "focus": "Short Vowel i",
+      "words": [
+        {
+          "word": "if"
+        },
+        {
+          "word": "is"
+        },
+        {
+          "word": "him"
+        },
+        {
+          "word": "rip"
+        },
+        {
+          "word": "fit"
+        },
+        {
+          "word": "pin",
+          "emoji": "\ud83d\udccc"
+        }
+      ],
+      "weekOf": "2026-09-07"
+    },
+    {
+      "id": "lesson3",
+      "label": "Lesson 3",
+      "unit": 1,
+      "focus": "Short Vowel o",
+      "words": [
+        {
+          "word": "log"
+        },
+        {
+          "word": "dot"
+        },
+        {
+          "word": "top"
+        },
+        {
+          "word": "hot"
+        },
+        {
+          "word": "lot"
+        },
+        {
+          "word": "ox"
+        }
+      ],
+      "weekOf": "2026-09-14"
+    },
+    {
+      "id": "lesson4",
+      "label": "Lesson 4",
+      "unit": 1,
+      "focus": "Short Vowel e",
+      "words": [
+        {
+          "word": "yet"
+        },
+        {
+          "word": "web"
+        },
+        {
+          "word": "pen"
+        },
+        {
+          "word": "wet"
+        },
+        {
+          "word": "leg"
+        },
+        {
+          "word": "hen"
+        }
+      ],
+      "weekOf": "2026-09-21"
+    },
+    {
+      "id": "lesson5",
+      "label": "Lesson 5",
+      "unit": 1,
+      "focus": "Short Vowel u",
+      "words": [
+        {
+          "word": "up"
+        },
+        {
+          "word": "bug"
+        },
+        {
+          "word": "mud"
+        },
+        {
+          "word": "nut"
+        },
+        {
+          "word": "hug"
+        },
+        {
+          "word": "tub"
+        }
+      ],
+      "weekOf": "2026-09-28"
+    },
+    {
+      "id": "lesson6",
+      "label": "Lesson 6",
+      "unit": 2,
+      "focus": "Short a Words",
+      "words": [
+        {
+          "word": "an"
+        },
+        {
+          "word": "bad"
+        },
+        {
+          "word": "can"
+        },
+        {
+          "word": "had"
+        },
+        {
+          "word": "cat"
+        },
+        {
+          "word": "ran"
+        }
+      ],
+      "weekOf": "2026-10-05"
+    },
+    {
+      "id": "lesson7",
+      "label": "Lesson 7",
+      "unit": 2,
+      "focus": "Short i Words",
+      "words": [
+        {
+          "word": "in"
+        },
+        {
+          "word": "will"
+        },
+        {
+          "word": "did"
+        },
+        {
+          "word": "sit"
+        },
+        {
+          "word": "six"
+        },
+        {
+          "word": "big"
+        }
+      ],
+      "weekOf": "2026-10-12"
+    },
+    {
+      "id": "lesson8",
+      "label": "Lesson 8",
+      "unit": 2,
+      "focus": "Short o Words",
+      "words": [
+        {
+          "word": "on"
+        },
+        {
+          "word": "got"
+        },
+        {
+          "word": "fox"
+        },
+        {
+          "word": "pop"
+        },
+        {
+          "word": "not"
+        },
+        {
+          "word": "hop"
+        }
+      ],
+      "weekOf": "2026-10-19"
+    },
+    {
+      "id": "lesson9",
+      "label": "Lesson 9",
+      "unit": 2,
+      "focus": "Short e Words",
+      "words": [
+        {
+          "word": "yes"
+        },
+        {
+          "word": "let"
+        },
+        {
+          "word": "red"
+        },
+        {
+          "word": "ten"
+        },
+        {
+          "word": "bed"
+        },
+        {
+          "word": "get"
+        }
+      ],
+      "weekOf": "2026-10-26"
+    },
+    {
+      "id": "lesson10",
+      "label": "Lesson 10",
+      "unit": 2,
+      "focus": "Short u Words",
+      "words": [
+        {
+          "word": "us"
+        },
+        {
+          "word": "sun"
+        },
+        {
+          "word": "but"
+        },
+        {
+          "word": "fun"
+        },
+        {
+          "word": "bus"
+        },
+        {
+          "word": "run"
+        }
+      ],
+      "weekOf": "2026-11-02"
+    },
+    {
+      "id": "lesson11",
+      "label": "Lesson 11",
+      "unit": 3,
+      "focus": "th- Words",
+      "words": [
+        {
+          "word": "that"
+        },
+        {
+          "word": "then"
+        },
+        {
+          "word": "this"
+        },
+        {
+          "word": "them"
+        },
+        {
+          "word": "with"
+        },
+        {
+          "word": "bath"
+        }
+      ],
+      "weekOf": "2026-11-09"
+    },
+    {
+      "id": "lesson12",
+      "label": "Lesson 12",
+      "unit": 3,
+      "focus": "ch- Words",
+      "words": [
+        {
+          "word": "chin"
+        },
+        {
+          "word": "chop"
+        },
+        {
+          "word": "much"
+        },
+        {
+          "word": "chip"
+        },
+        {
+          "word": "rich"
+        },
+        {
+          "word": "chick"
+        }
+      ],
+      "weekOf": "2026-11-16"
+    },
+    {
+      "id": "lesson13",
+      "label": "Lesson 13",
+      "unit": 3,
+      "focus": "sh-/wh- Words",
+      "words": [
+        {
+          "word": "ship"
+        },
+        {
+          "word": "shop"
+        },
+        {
+          "word": "which"
+        },
+        {
+          "word": "when"
+        },
+        {
+          "word": "whip"
+        },
+        {
+          "word": "fish"
+        }
+      ],
+      "weekOf": "2026-11-23"
+    },
+    {
+      "id": "lesson14",
+      "label": "Lesson 14",
+      "unit": 3,
+      "focus": "Long a (Silent e)",
+      "words": [
+        {
+          "word": "came"
+        },
+        {
+          "word": "make"
+        },
+        {
+          "word": "brave"
+        },
+        {
+          "word": "late"
+        },
+        {
+          "word": "gave"
+        },
+        {
+          "word": "shape"
+        }
+      ],
+      "weekOf": "2026-11-30"
+    },
+    {
+      "id": "lesson15",
+      "label": "Lesson 15",
+      "unit": 3,
+      "focus": "Long i (Silent e)",
+      "words": [
+        {
+          "word": "time"
+        },
+        {
+          "word": "like"
+        },
+        {
+          "word": "kite"
+        },
+        {
+          "word": "bike"
+        },
+        {
+          "word": "white"
+        },
+        {
+          "word": "drive"
+        }
+      ],
+      "weekOf": "2026-12-07"
+    },
+    {
+      "id": "lesson16",
+      "label": "Lesson 16",
+      "unit": 4,
+      "focus": "Long o (Silent e)",
+      "words": [
+        {
+          "word": "so"
+        },
+        {
+          "word": "go"
+        },
+        {
+          "word": "home"
+        },
+        {
+          "word": "hole"
+        },
+        {
+          "word": "no"
+        },
+        {
+          "word": "rope"
+        },
+        {
+          "word": "joke"
+        },
+        {
+          "word": "bone"
+        },
+        {
+          "word": "stove"
+        },
+        {
+          "word": "poke"
+        }
+      ],
+      "weekOf": "2026-12-14"
+    },
+    {
+      "id": "lesson17",
+      "label": "Lesson 17",
+      "unit": 4,
+      "focus": "Long e (ee/ea)",
+      "words": [
+        {
+          "word": "me"
+        },
+        {
+          "word": "be"
+        },
+        {
+          "word": "read"
+        },
+        {
+          "word": "feet"
+        },
+        {
+          "word": "tree"
+        },
+        {
+          "word": "keep"
+        },
+        {
+          "word": "eat"
+        },
+        {
+          "word": "mean"
+        },
+        {
+          "word": "sea"
+        },
+        {
+          "word": "these"
+        }
+      ],
+      "weekOf": "2026-12-21"
+    },
+    {
+      "id": "lesson18",
+      "label": "Lesson 18",
+      "unit": 4,
+      "focus": "Long a (ai/ay)",
+      "words": [
+        {
+          "word": "play"
+        },
+        {
+          "word": "grain"
+        },
+        {
+          "word": "sail"
+        },
+        {
+          "word": "mail"
+        },
+        {
+          "word": "may"
+        },
+        {
+          "word": "rain"
+        },
+        {
+          "word": "way"
+        },
+        {
+          "word": "day"
+        },
+        {
+          "word": "stay"
+        },
+        {
+          "word": "pain"
+        }
+      ],
+      "weekOf": "2026-12-28"
+    },
+    {
+      "id": "lesson19",
+      "label": "Lesson 19",
+      "unit": 4,
+      "focus": "Long o (ow/oa)",
+      "words": [
+        {
+          "word": "show"
+        },
+        {
+          "word": "row"
+        },
+        {
+          "word": "grow"
+        },
+        {
+          "word": "low"
+        },
+        {
+          "word": "blow"
+        },
+        {
+          "word": "snow"
+        },
+        {
+          "word": "boat"
+        },
+        {
+          "word": "coat"
+        },
+        {
+          "word": "road"
+        },
+        {
+          "word": "toad"
+        }
+      ],
+      "weekOf": "2027-01-04"
+    },
+    {
+      "id": "lesson20",
+      "label": "Lesson 20",
+      "unit": 4,
+      "focus": "Compound Words",
+      "words": [
+        {
+          "word": "bedtime"
+        },
+        {
+          "word": "sunset"
+        },
+        {
+          "word": "bathtub"
+        },
+        {
+          "word": "sailboat"
+        },
+        {
+          "word": "flagpole"
+        },
+        {
+          "word": "backpack"
+        },
+        {
+          "word": "playpen"
+        },
+        {
+          "word": "raincoat"
+        },
+        {
+          "word": "inside"
+        },
+        {
+          "word": "himself"
+        }
+      ],
+      "weekOf": "2027-01-11"
+    },
+    {
+      "id": "lesson21",
+      "label": "Lesson 21",
+      "unit": 5,
+      "focus": "ar Words",
+      "words": [
+        {
+          "word": "far"
+        },
+        {
+          "word": "arm"
+        },
+        {
+          "word": "yard"
+        },
+        {
+          "word": "art"
+        },
+        {
+          "word": "jar"
+        },
+        {
+          "word": "bar"
+        },
+        {
+          "word": "barn"
+        },
+        {
+          "word": "bark"
+        },
+        {
+          "word": "card"
+        },
+        {
+          "word": "yarn"
+        }
+      ],
+      "weekOf": "2027-01-18"
+    },
+    {
+      "id": "lesson22",
+      "label": "Lesson 22",
+      "unit": 5,
+      "focus": "er/ir/ur Words",
+      "words": [
+        {
+          "word": "her"
+        },
+        {
+          "word": "fern"
+        },
+        {
+          "word": "girl"
+        },
+        {
+          "word": "sir"
+        },
+        {
+          "word": "stir"
+        },
+        {
+          "word": "bird"
+        },
+        {
+          "word": "fur"
+        },
+        {
+          "word": "hurt"
+        },
+        {
+          "word": "turn"
+        },
+        {
+          "word": "third"
+        }
+      ],
+      "weekOf": "2027-01-25"
+    },
+    {
+      "id": "lesson23",
+      "label": "Lesson 23",
+      "unit": 5,
+      "focus": "oo (as in book)",
+      "words": [
+        {
+          "word": "look"
+        },
+        {
+          "word": "book"
+        },
+        {
+          "word": "good"
+        },
+        {
+          "word": "hook"
+        },
+        {
+          "word": "brook"
+        },
+        {
+          "word": "took"
+        },
+        {
+          "word": "foot"
+        },
+        {
+          "word": "shook"
+        },
+        {
+          "word": "wood"
+        },
+        {
+          "word": "hood"
+        }
+      ],
+      "weekOf": "2027-02-01"
+    },
+    {
+      "id": "lesson24",
+      "label": "Lesson 24",
+      "unit": 5,
+      "focus": "oo (as in moon)",
+      "words": [
+        {
+          "word": "soon"
+        },
+        {
+          "word": "new"
+        },
+        {
+          "word": "noon"
+        },
+        {
+          "word": "zoo"
+        },
+        {
+          "word": "boot"
+        },
+        {
+          "word": "too"
+        },
+        {
+          "word": "moon"
+        },
+        {
+          "word": "blew"
+        },
+        {
+          "word": "soup"
+        },
+        {
+          "word": "you"
+        }
+      ],
+      "weekOf": "2027-02-08"
+    },
+    {
+      "id": "lesson25",
+      "label": "Lesson 25",
+      "unit": 5,
+      "focus": "ow/ou Words",
+      "words": [
+        {
+          "word": "how"
+        },
+        {
+          "word": "now"
+        },
+        {
+          "word": "cow"
+        },
+        {
+          "word": "owl"
+        },
+        {
+          "word": "ouch"
+        },
+        {
+          "word": "house"
+        },
+        {
+          "word": "found"
+        },
+        {
+          "word": "out"
+        },
+        {
+          "word": "gown"
+        },
+        {
+          "word": "town"
+        }
+      ],
+      "weekOf": "2027-02-15"
+    },
+    {
+      "id": "lesson26",
+      "label": "Lesson 26",
+      "unit": 6,
+      "focus": "-ed/-ing Endings",
+      "words": [
+        {
+          "word": "mix"
+        },
+        {
+          "word": "mixed"
+        },
+        {
+          "word": "hop"
+        },
+        {
+          "word": "hopped"
+        },
+        {
+          "word": "hope"
+        },
+        {
+          "word": "hoping"
+        },
+        {
+          "word": "run"
+        },
+        {
+          "word": "running"
+        },
+        {
+          "word": "use"
+        },
+        {
+          "word": "used"
+        }
+      ],
+      "weekOf": "2027-02-22"
+    },
+    {
+      "id": "lesson27",
+      "label": "Lesson 27",
+      "unit": 6,
+      "focus": "-er/-est Endings",
+      "words": [
+        {
+          "word": "hand"
+        },
+        {
+          "word": "harder"
+        },
+        {
+          "word": "hardest"
+        },
+        {
+          "word": "fast"
+        },
+        {
+          "word": "faster"
+        },
+        {
+          "word": "fastest"
+        },
+        {
+          "word": "slow"
+        },
+        {
+          "word": "slower"
+        },
+        {
+          "word": "slowest"
+        },
+        {
+          "word": "sooner"
+        }
+      ],
+      "weekOf": "2027-03-01"
+    },
+    {
+      "id": "lesson28",
+      "label": "Lesson 28",
+      "unit": 6,
+      "focus": "Long i (y)",
+      "words": [
+        {
+          "word": "my"
+        },
+        {
+          "word": "try"
+        },
+        {
+          "word": "sky"
+        },
+        {
+          "word": "fly"
+        },
+        {
+          "word": "by"
+        },
+        {
+          "word": "dry"
+        },
+        {
+          "word": "pie"
+        },
+        {
+          "word": "cried"
+        },
+        {
+          "word": "night"
+        },
+        {
+          "word": "light"
+        }
+      ],
+      "weekOf": "2027-03-08"
+    },
+    {
+      "id": "lesson29",
+      "label": "Lesson 29",
+      "unit": 6,
+      "focus": "-ly/-y Endings",
+      "words": [
+        {
+          "word": "sad"
+        },
+        {
+          "word": "sadly"
+        },
+        {
+          "word": "slow"
+        },
+        {
+          "word": "slowly"
+        },
+        {
+          "word": "dust"
+        },
+        {
+          "word": "dusty"
+        },
+        {
+          "word": "trick"
+        },
+        {
+          "word": "tricky"
+        },
+        {
+          "word": "help"
+        },
+        {
+          "word": "helpful"
+        }
+      ],
+      "weekOf": "2027-03-15"
+    },
+    {
+      "id": "lesson30",
+      "label": "Lesson 30",
+      "unit": 6,
+      "focus": "Multisyllable Words",
+      "words": [
+        {
+          "word": "even"
+        },
+        {
+          "word": "open"
+        },
+        {
+          "word": "begin"
+        },
+        {
+          "word": "baby"
+        },
+        {
+          "word": "tiger"
+        },
+        {
+          "word": "music"
+        },
+        {
+          "word": "paper"
+        },
+        {
+          "word": "zero"
+        },
+        {
+          "word": "table"
+        },
+        {
+          "word": "below"
+        }
+      ],
+      "weekOf": "2027-03-22"
+    }
   ]
 }

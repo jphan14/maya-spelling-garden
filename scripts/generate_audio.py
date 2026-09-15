@@ -168,8 +168,9 @@ def build_weeks_js(weeks_data):
     lines = [START_MARKER, "var WEEKS = ["]
     for week in weeks_data["weeks"]:
         unit_part = (", unit: %d" % week["unit"]) if week.get("unit") is not None else ""
-        lines.append("  { id: %s, label: %s%s, focus: %s, words: [" % (
-            js_string(week["id"]), js_string(week["label"]), unit_part, js_string(week["focus"])))
+        week_of_part = (", weekOf: %s" % js_string(week["weekOf"])) if week.get("weekOf") else ""
+        lines.append("  { id: %s, label: %s%s%s, focus: %s, words: [" % (
+            js_string(week["id"]), js_string(week["label"]), unit_part, week_of_part, js_string(week["focus"])))
         word_entries = [build_word_entry(w) for w in week["words"]]
         lines.append("    " + ",\n    ".join(word_entries))
         lines.append("  ] },")

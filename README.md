@@ -22,11 +22,15 @@ git commit -m "Add <week label>"
 git push
 ```
 
-`words.json` format — append a new object to the `weeks` array:
+`words.json` format — append a new object to the `weeks` array. This repo
+tracks the "First Grade Journeys" spelling curriculum (30 lessons, 6
+units, one lesson assigned per week), so `id`/`label` follow "lessonN":
 ```json
 {
-  "id": "sept15",
-  "label": "Sept 15",
+  "id": "lesson31",
+  "label": "Lesson 31",
+  "unit": 7,
+  "weekOf": "2027-03-29",
   "focus": "Short Vowel o",
   "words": [
     { "word": "hop" },
@@ -34,8 +38,15 @@ git push
   ]
 }
 ```
-Only add `"emoji"` for words with one clear, unambiguous picture — skip it
-for sight/function words (am, is, at, etc.).
+- `"unit"` groups lessons under a colored header in the vertical lesson
+  list (colors cycle every 6 units — see `UNIT_COLORS` in index.html).
+- `"weekOf"` is the Monday the lesson's week starts (`YYYY-MM-DD`). The
+  home screen automatically highlights whichever lesson's Mon–Sun range
+  contains today's date as "Today's Lesson" — no manual step. If a lesson
+  ever gets skipped or the school's pace shifts, just adjust that lesson's
+  (and any later lessons') `weekOf` dates to match reality.
+- Only add `"emoji"` for words with one clear, unambiguous picture — skip
+  it for sight/function words (am, is, at, etc.).
 
 ## Adding a new week from your phone
 
@@ -64,11 +75,13 @@ works in the meantime, just with lower-quality speech).
 
 ## Voices
 
-Maya can tap two alt-voice buttons (Andrew, Emma) to hear a word spoken
-differently, in addition to the primary voice (Jenny) that plays
-automatically. To change any of these, edit the `VOICES` list at the top
-of `scripts/generate_audio.py`, delete the stale `audio/<word>__<oldkey>.mp3`
-files for the voice(s) you changed, and rerun the script.
+The app embeds one voice (Jenny) that plays automatically on word load and
+via the "hear it again" button. `scripts/generate_audio.py`'s `VOICES` list
+also has Andrew and Emma defined but commented out — the full 240-word
+curriculum at 3 voices pushed the page to 11.8MB, so it's Jenny-only for
+now (~3.5MB). Andrew/Emma's audio is already cached in `audio/`, so
+uncommenting them and rerunning the script (e.g. for a shorter custom word
+list) won't need new TTS calls.
 
 ## Requirements
 

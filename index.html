@@ -36,7 +36,13 @@ body::after {
 .hidden { display: none !important; }
 
 /* HOME */
-#home-screen { justify-content: flex-start; gap: 14px; padding-top: 22px; }
+#home-screen { justify-content: flex-start; gap: 14px; padding-top: 22px; padding-bottom: 96px; }
+.start-bar {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 5;
+  display: flex; justify-content: center;
+  padding: 14px 18px calc(14px + env(safe-area-inset-bottom, 0px));
+  background: linear-gradient(180deg, rgba(240,253,244,0) 0%, var(--bg) 35%);
+}
 .home-photo-wrap { position: relative; width: 84px; height: 84px; }
 .home-photo {
   width: 84px; height: 84px; border-radius: 50%; object-fit: cover; object-position: center 15%;
@@ -97,7 +103,7 @@ body::after {
 .today-divider-line { flex: 1; height: 2px; background: var(--pink-dk); opacity: 0.5; }
 .today-divider-label { font-size: 11px; font-weight: 800; color: var(--pink-dk); white-space: nowrap; }
 
-.start-btn { background: linear-gradient(135deg, var(--green), var(--green2)); color: #fff; border: none; border-radius: 20px; font-family: 'Fredoka One', sans-serif; font-size: 22px; padding: 16px 0; width: 100%; max-width: 380px; cursor: pointer; box-shadow: 0 6px 24px rgba(22,163,74,0.35); transition: transform 0.12s; margin-top: 4px; }
+.start-btn { background: linear-gradient(135deg, var(--green), var(--green2)); color: #fff; border: none; border-radius: 20px; font-family: 'Fredoka One', sans-serif; font-size: 20px; padding: 16px 0; width: 100%; max-width: 380px; cursor: pointer; box-shadow: 0 6px 24px rgba(22,163,74,0.4), 0 2px 10px rgba(0,0,0,0.1); transition: transform 0.12s; }
 .start-btn:active { transform: scale(0.97); }
 
 /* GAME */
@@ -235,7 +241,9 @@ body::after {
   <div class="section-label">Choose a lesson</div>
   <div class="week-list" id="week-list"></div>
 
-  <button class="start-btn" id="start-btn">🌼 Start, Maya!</button>
+  <div class="start-bar">
+    <button class="start-btn" id="start-btn">🌼 Start, Maya!</button>
+  </div>
 </div>
 
 <!-- GAME -->
@@ -722,11 +730,26 @@ function allWeekWords() {
 
 var UNIT_COLORS = ['#ec4899', '#f97316', '#eab308', '#22c55e', '#3b82f6', '#a855f7'];
 
+function updateStartButtonLabel() {
+  var btn = document.getElementById('start-btn');
+  if (!btn) return;
+  var label = 'Start!';
+  if (selectedWeekId === 'all') {
+    label = 'Start All Words!';
+  } else {
+    for (var i = 0; i < WEEKS.length; i++) {
+      if (WEEKS[i].id === selectedWeekId) { label = 'Start ' + WEEKS[i].label + '!'; break; }
+    }
+  }
+  btn.textContent = '🌼 ' + label;
+}
+
 function buildWeekList() {
   var perfect = getPerfectWeeks();
   var currentLessonId = computeCurrentLessonId();
   var list = document.getElementById('week-list');
   list.innerHTML = '';
+  updateStartButtonLabel();
 
   var allRow = document.createElement('div');
   allRow.className = 'all-words-row' + (selectedWeekId === 'all' ? ' selected' : '');
